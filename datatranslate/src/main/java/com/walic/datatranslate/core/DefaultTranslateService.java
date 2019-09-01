@@ -27,7 +27,12 @@ public class DefaultTranslateService implements TranslateService {
 		if (ClassUtils.isComposity(object)) {
 			return translateComposityObject(object, null);
 		}
-		JSONObject json = (JSONObject) JSONObject.toJSON(object);
+		JSONObject json = null;
+		try {
+			json = (JSONObject) JSONObject.toJSON(object);
+		} catch (Exception e) {
+			return object;
+		}
 		Field[] fields = ClassUtils.getModelField(object.getClass());
 		for (Field field : fields) {
 			Object translateValue = translateField(field, object);
