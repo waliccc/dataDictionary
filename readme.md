@@ -8,7 +8,7 @@
 
 ```xml
 <dependency>
-	<groupId>com.cycode.datatranslate</groupId>
+	<groupId>cn.cycode.datatranslate</groupId>
 	<artifactId>datatranslate</artifactId>
 	<version>1.0</version>
 </dependency>
@@ -142,7 +142,7 @@ datatranslate提供了springboot的starter以便其能在springboot更方便地�
 
 ```xml
 <dependency>
-    <groupId>com.cycode.datatranslate</groupId>
+    <groupId>cn.cycode.datatranslate</groupId>
     <artifactId>datatranslate-boot-starter</artifactId>
     <version>1.0</version>
 </dependency>
