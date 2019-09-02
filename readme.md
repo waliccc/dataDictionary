@@ -8,7 +8,7 @@
 
 ```xml
 <dependency>
-	<groupId>com.walic.datatranslate</groupId>
+	<groupId>com.cycode.datatranslate</groupId>
 	<artifactId>datatranslate</artifactId>
 	<version>1.0</version>
 </dependency>
@@ -142,7 +142,7 @@ datatranslate提供了springboot的starter以便其能在springboot更方便地�
 
 ```xml
 <dependency>
-    <groupId>com.walic.datatranslate</groupId>
+    <groupId>com.cycode.datatranslate</groupId>
     <artifactId>datatranslate-boot-starter</artifactId>
     <version>1.0</version>
 </dependency>
@@ -238,6 +238,8 @@ User中又包含了类型为User（当然还可以是其他类型）的lover属�
 #### 切忌循环依赖
 
 bean的循环依赖会直接导致<b>StackOverflowError</b>
+
+#### 保证bean的字段有Getter方法
 
 #### 抑制遍历翻译
 
