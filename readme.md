@@ -152,6 +152,12 @@ datatranslate提供了springboot的starter以便其能在springboot更方便地�
 
 ```java
 @ImportAutoConfiguration(classes = { DataTranslateConfiguration.class })
+@SpringBootApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
 ```
 
 - 在Controller中使用<b>@DataTranslate</b>注解
